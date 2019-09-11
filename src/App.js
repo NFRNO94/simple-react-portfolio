@@ -8,19 +8,22 @@ import Img from "../src/assets/images/landBack.png";
 import styled from 'styled-components';
 
 const AppStyle = createGlobalStyle`
-  body {
+  html, body {
     width: 100%;
     height: 100%;
     color: white;
+    scroll-behavior: smooth;
     background: url(${Img});
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
+
+
 `;
 
 const HeadDiv = styled.div`
-padding: 375px 50px 350px 50px;
+padding: 325px 50px 325px 50px;
 width: 100%;
 height: 100%;
 color: white;
@@ -33,6 +36,7 @@ const Heading = styled.h2`
 color: #001eff;
 font-style: italic;
 margin-bottom: 25px;
+scroll-behavior: smooth;
 `;
 
 const BodyDiv = styled.div`
@@ -44,10 +48,10 @@ box-shadow: 8px 5px #0a0a0a;
 `;
 
 const Line = styled.hr`
-  color: white;
-  background: white;
-  margin: 50px;
-  padding: 0px 20px 0px 20px;
+color: white;
+background: white;
+margin: 50px;
+padding: 0px 20px 0px 20px;
 `;
 
 const EmailBtn = styled.button`
@@ -69,18 +73,9 @@ class App extends Component {
     return (
       <React.Fragment>
         <AppStyle />
-        {/* Illustrated background image, will purchase */}
+        <Navbar />
         <Wrapper2>
-          <Navbar />
           <br></br>
-          {/* <div className="row mt-3">
-            <Logo>Logo</Logo>
-            <Nav>navbar will be here</Nav>
-            <br></br>
-            <br></br>
-          </div> */}
-
-
           <Wrapper2>
             <div className="statement">
               <HeadDiv>
@@ -140,11 +135,25 @@ class App extends Component {
 
             <Wrapper>
               <div className="text-center justify-content-center">
-                <Heading id="emailMe">Do you want to work with me?</Heading>
+                <Heading id="emailMe">Would you like to work with me?</Heading>
                 <EmailBtn type="button" class="btn btn-lg btn-block"><h3>Send me and email!</h3></EmailBtn>
                 <br></br>
                 <br></br>
+                
+                <Heading id="followMe">Follow Me!</Heading>
+                <button>GitHub</button>
+                <button>Twitter</button>
+                <button>Heroku</button>
+                <button>Facebook</button>
+                <button>Instagram</button>
+                <button>LinkedIn</button>
               </div>
+            </Wrapper>
+
+            <br></br>
+
+            <Wrapper>
+              <button>Back to top with arrow</button>
             </Wrapper>
 
             <br></br>
