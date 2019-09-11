@@ -20,7 +20,7 @@ const AppStyle = createGlobalStyle`
 `;
 
 const HeadDiv = styled.div`
-padding: 350px 50px 350px 50px;
+padding: 375px 50px 350px 50px;
 width: 100%;
 height: 100%;
 color: white;
@@ -29,9 +29,10 @@ font-weight: bolder;
 text-shadow: 3px 3px black;
 `;
 
-const Heading = styled.h3`
+const Heading = styled.h2`
 color: #001eff;
 font-style: italic;
+margin-bottom: 25px;
 `;
 
 const BodyDiv = styled.div`
@@ -47,6 +48,20 @@ const Line = styled.hr`
   background: white;
   margin: 50px;
   padding: 0px 20px 0px 20px;
+`;
+
+const EmailBtn = styled.button`
+background: #001eff;
+color: white;
+width: 100%;
+padding: 15px 20px 15px 20px;
+border-radius: 10px;
+
+:hover {
+  background: white;
+  color: #001eff;
+  border: solid .5px #001eff;
+}
 `;
 
 class App extends Component {
@@ -100,16 +115,7 @@ class App extends Component {
 
             <Wrapper>
               <Heading id="skills">Skills</Heading>
-              <p>Bulleted list here in table format. Will find nice organized way to do this</p>
-              <SkillsList>
-
-              </SkillsList>
-              <p>.</p>
-              <p>.</p>
-              <p>.</p>
-              <p>.</p>
-              <p>.</p>
-              <p>.</p>
+              <SkillsList />
             </Wrapper>
 
             <Line />
@@ -133,17 +139,18 @@ class App extends Component {
             <Line />
 
             <Wrapper>
-              <Heading id="emailMe">Email me!</Heading>
-              <br></br>
-              <button>My email link</button>
-              <br></br>
-              <br></br>
+              <div className="text-center justify-content-center">
+                <Heading id="emailMe">Do you want to work with me?</Heading>
+                <EmailBtn type="button" class="btn btn-lg btn-block"><h3>Send me and email!</h3></EmailBtn>
+                <br></br>
+                <br></br>
+              </div>
             </Wrapper>
 
             <br></br>
 
           </BodyDiv>
-          
+
         </Wrapper2>
 
       </React.Fragment>
