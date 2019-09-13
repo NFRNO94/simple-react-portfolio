@@ -82,8 +82,7 @@ class App extends Component {
               </HeadDiv>
             </div>
           </Wrapper2>
-          <span id="aboutMe"></span>
-          <BodyDiv>
+          <BodyDiv id="aboutMe">
             <br></br>
             <br></br>
 
