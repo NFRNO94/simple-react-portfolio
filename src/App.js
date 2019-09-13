@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 import Wrapper from "../src/components/Wrapper.js";
 import Wrapper2 from "../src/components/Wrapper2.js";
 import Navbar from "../src/components/Navbar.js";
+import About from "../src/components/About.js";
 import SkillsList from "../src/components/SkillsList.js";
 import Img from "../src/assets/images/landBack.png";
 import styled from 'styled-components';
@@ -13,13 +14,11 @@ const AppStyle = createGlobalStyle`
     height: 100%;
     color: white;
     scroll-behavior: smooth;
-    background: url(${Img});
+    background-image: url(${Img});
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
-
-
 `;
 
 const HeadDiv = styled.div`
@@ -36,11 +35,11 @@ const Heading = styled.h2`
 color: #001eff;
 font-style: italic;
 margin-bottom: 25px;
-scroll-behavior: smooth;
+padding-top: 50px;
 `;
 
 const BodyDiv = styled.div`
-padding: 0px 25px 0px 25px;
+padding: 15px 25px 0px 25px;
 margin: 0px 50px 50px 50px;
 background: black;
 border-radius: 20px;
@@ -83,21 +82,14 @@ class App extends Component {
               </HeadDiv>
             </div>
           </Wrapper2>
+          <span id="aboutMe"></span>
           <BodyDiv>
-
             <br></br>
             <br></br>
 
             <Wrapper>
-              <Heading id="aboutMe">About Me</Heading>
-              <p>an image of me will be here</p>
-              <p>.</p>
-              <p>.</p>
-              <p>.</p>
-              <p>.</p>
-              <p>.</p>
-              <p>.</p>
-              <p>.</p>
+              <Heading>About Me</Heading>
+              <About />
               <br></br>
               <br></br>
               <p>klhfglqhrguhwerljknwrehvlntkwerghnklwehrnlghnvwelkrgnvlkjwehrgkjvhwnejkrngkwer kjgcnkjgrkjnrkjcghmwkjnjwerkjgnqerhgiwehrghwrgkha fgkjfhgchuhfinugrgoehrwmicghqreicghqiurchmqgoinucgoqhri guqhxrieuxfoiqurcguqnruriugqruhqoiruhfiq ourhgioqrhgiuoqhrbsdjhfbkjahsdhfqyw4groiu whoy  ewbo  egwryoug  weuifh  weyfg wegfyewhfyewrgywehriuehwiru iw if qw fq qhyor gqyreg yqer ggo qerg qer aiuehnreghveqrighiqerh ngiqergqergqergvqeriughqerioghoiurhgiuerogiuqhneroiugvqve iorugvoiquergoiuqeroiguyqeroiugyqiuoerygiouqerygoiuqeyriougvyqe iroyvgiuqerycgiuqeyerciogyqergyoiuqcrioguyqeriogcyiouqreybgioqeriougycqierbgiuoqer oigcqeiourgnciouqergiouqyebriougybqei
@@ -106,17 +98,17 @@ class App extends Component {
               orugybioeryiy</p>
             </Wrapper>
 
-            <Line />
+            <Line id="skills" />
 
             <Wrapper>
-              <Heading id="skills">Skills</Heading>
+              <Heading>Skills</Heading>
               <SkillsList />
             </Wrapper>
 
-            <Line />
+            <Line id="projects" />
 
             <Wrapper>
-              <Heading id="projects">Projects</Heading>
+              <Heading>Projects</Heading>
               <br></br>
               <p>Porject cards will be displayed here.</p>
               <p>.</p>
@@ -131,15 +123,15 @@ class App extends Component {
               <p>.</p>
             </Wrapper>
 
-            <Line />
+            <Line id="emailMe" />
 
             <Wrapper>
               <div className="text-center justify-content-center">
-                <Heading id="emailMe">Would you like to work with me?</Heading>
+                <Heading>Would you like to work with me?</Heading>
                 <EmailBtn type="button" class="btn btn-lg btn-block"><h3>Send me and email!</h3></EmailBtn>
                 <br></br>
                 <br></br>
-                
+
                 <Heading id="followMe">Follow Me!</Heading>
                 <button>GitHub</button>
                 <button>Twitter</button>

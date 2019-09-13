@@ -11,15 +11,18 @@ padding: 15px 25px 15px 25px;
 
 const NavLink = styled.a`
 color: white;
-font-size: 18px;
-font-weight: bold;
+font-size: 16px;
+font-weight: bolder;
 border-bottom: solid black;
-border-width: 2px; 
+border-width: 3px; 
+border-radius: 3px;
+margin-right: 5px;
 
 :hover {
     color: #001eff;
     border-bottom: solid white;
-    border-width: 2px; 
+    border-width: 3px; 
+    border-radius: 6px;
 }
 `;
 
@@ -37,7 +40,7 @@ transition: 1.5s;
 class Navbar extends Component {
     render() {
         return (
-            <NavBar className="navbar navbar-light" id="top">
+            <NavBar className="navbar navbar-light sticky-top" id="top">
                 <LogoLink href="#top"><Logo /></LogoLink>
                 <NavUl className="nav justify-content-end">
                     <li className="nav-item">

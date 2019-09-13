@@ -1,15 +1,40 @@
 import React, { Component } from "react";
 import styled from 'styled-components';
 
+// const rotate = keyframes`
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// `;
+
+// const Rotate = styled.div`
+//   display: inline-block;
+//   animation: ${rotate} 2s linear infinite;
+//   padding: 2rem 1rem;
+//   font-size: 1.2rem;
+// `;
+
+// const styles = css`
+//   animation: ${rotate} 2s linear infinite;
+// `
+
 const ContainLogo = styled.div`
     color: white;
+    height: auto;
+    width: auto;
     border: solid 5px white;
+    border-radius: 5px;
+    display: inline-block;
 `;
 
-const Letters = styled.h2`
-padding: 15px 20px 15px 20px;
+const Letters = styled.h5`
+padding: 12px;
+margin: 0px;
 text-decoration: none;
-font-weight: bold;
+font-weight: bolder;
 
 :hover {
     text-decoration: none;
