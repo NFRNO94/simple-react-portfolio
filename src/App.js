@@ -73,6 +73,7 @@ const ToTop = styled.a`
 background: black;
 color: #001eff;
 border: none;
+font-size: 16px;
 
 :hover {
   color: white;

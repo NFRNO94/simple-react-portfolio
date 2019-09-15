@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Card = styled.div`
 border: 1.5px solid #ccc;
 padding: 1px;
-margin-bottom: 10px;
+margin-bottom: 15px;
 
 
 :hover {
