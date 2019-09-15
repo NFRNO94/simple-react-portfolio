@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "MCU Click Game",
+        "description": "A random clicking game built in React.js",
+        "image": "../src/assets/images/mcuClickPic.png",
+        "url": "https://mcu-clicky-game.herokuapp.com"
+    },
+    {
+        "id": 2,
+        "name": "project 2",
+        "description": "...",
+        "image": "...",
+        "url": "..."
+    },
+    {
+        "id": 3,
+        "name": "project 3",
+        "description": "...",
+        "image": "...",
+        "url": "..."
+    },
+    {
+        "id": 4,
+        "name": "project 4",
+        "description": "...",
+        "image": "...",
+        "url": "..."
+    }
+]

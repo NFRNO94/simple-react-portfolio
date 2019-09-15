@@ -41,11 +41,26 @@ font-weight: bolder;
 }
 `;
 
+const LogoLink = styled.a`
+margin: 0px;
+padding: 0px;
+text-decoration: none;
+color: white;
+font-weight: bolder;
+
+:hover {
+    color: white;
+    text-decoration: none;
+}
+`;
+
 class Logo extends Component {
     render() {
         return (
             <ContainLogo>
-                <Letters>DP</Letters>
+                <LogoLink href="#top">
+                    <Letters>DP</Letters>
+                </LogoLink>
             </ContainLogo>
         )
     }

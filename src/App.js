@@ -5,7 +5,9 @@ import Wrapper2 from "../src/components/Wrapper2.js";
 import Navbar from "../src/components/Navbar.js";
 import About from "../src/components/About.js";
 import SkillsList from "../src/components/SkillsList.js";
+import ProjectCard from "../src/components/ProjectCard.js";
 import Img from "../src/assets/images/landBack.png";
+import projects from "./projects.json";
 import styled from 'styled-components';
 
 const AppStyle = createGlobalStyle`
@@ -63,11 +65,27 @@ border-radius: 10px;
 :hover {
   background: white;
   color: #001eff;
-  border: solid .5px #001eff;
+  border: solid 1px #001eff;
+}
+`;
+
+const ToTop = styled.a`
+background: black;
+color: #001eff;
+border: none;
+
+:hover {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
 }
 `;
 
 class App extends Component {
+  state = {
+    projects
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -109,17 +127,17 @@ class App extends Component {
             <Wrapper>
               <Heading>Projects</Heading>
               <br></br>
-              <p>Porject cards will be displayed here.</p>
-              <p>.</p>
-              <p>.</p>
-              <p>.</p>
-              <p>.</p>
-              <p>.</p>
-              <p>.</p>
-              <p>.</p>
-              <p>.</p>
-              <p>.</p>
-              <p>.</p>
+              {this.state.projects.map(project => (
+                <ProjectCard
+                  id={project.id}
+                  key={project.id}
+                  name={project.name}
+                  description={project.description}
+                  image={project.image}
+                  url={project.url}
+                />
+              ))}
+
             </Wrapper>
 
             <Line id="emailMe" />
@@ -127,7 +145,7 @@ class App extends Component {
             <Wrapper>
               <div className="text-center justify-content-center">
                 <Heading>Would you like to work with me?</Heading>
-                <EmailBtn type="button" class="btn btn-lg btn-block"><h3>Send me and email!</h3></EmailBtn>
+                <EmailBtn type="button" className="btn btn-lg btn-block"><h3>Send me and email!</h3></EmailBtn>
                 <br></br>
                 <br></br>
 
@@ -142,17 +160,20 @@ class App extends Component {
             </Wrapper>
 
             <br></br>
+            <br></br>
 
             <Wrapper>
-              <button>Back to top with arrow</button>
+              <div className="row text-center">
+                <div className="col">
+                  <ToTop href="#top">Back to top with arrow</ToTop>
+                </div>
+              </div>
             </Wrapper>
 
             <br></br>
 
           </BodyDiv>
-
         </Wrapper2>
-
       </React.Fragment>
     );
   }

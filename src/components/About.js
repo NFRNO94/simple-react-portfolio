@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const TitleImg = styled.img`
 width: 100%;
-height: 480px;
+height: 500px;
 overflow: hidden;
 `;
 
