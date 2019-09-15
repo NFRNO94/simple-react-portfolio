@@ -7,7 +7,6 @@ import About from "../src/components/About.js";
 import SkillsList from "../src/components/SkillsList.js";
 import ProjectCard from "../src/components/ProjectCard.js";
 import Img from "../src/assets/images/landBack.png";
-import projects from "./projects.json";
 import styled from 'styled-components';
 
 const AppStyle = createGlobalStyle`
@@ -82,10 +81,41 @@ font-size: 16px;
 }
 `;
 
+const data = [
+  {
+    "id": 1,
+    "name": "MCU Click Game",
+    "description": "A random clicking game built in React.js",
+    "image": require("../src/assets/images/mcuClickPic.png"),
+    "url": "https://mcu-clicky-game.herokuapp.com"
+  },
+  {
+    "id": 2,
+    "name": "The Hookah Lounge & Bar",
+    "description": "An app created to place table orders, make reservations, and manage inventory of a Hookah Lounge using Handlebars, JavaScript and SQL",
+    "image": require("../src/assets/images/mcuClickPic.png"),
+    "url": "..."
+  },
+  {
+    "id": 3,
+    "name": "Submerge",
+    "description": "Subscription manager meets Entertainment Hub! Full Stack React App with Mongoose.",
+    "image": require("../src/assets/images/mcuClickPic.png"),
+    "url": "..."
+  }
+]
+
 class App extends Component {
   state = {
-    projects
-  }
+    data
+  };
+
+  formatImageUrl(url) {
+    const width = '400'
+    const height = '400'
+
+    return url.replace('{width}', width).replace('{height}', height)
+  };
 
   render() {
     return (
@@ -110,9 +140,9 @@ class App extends Component {
               <About />
               <br></br>
               <br></br>
-              <p>klhfglqhrguhwerljknwrehvlntkwerghnklwehrnlghnvwelkrgnvlkjwehrgkjvhwnejkrngkwer kjgcnkjgrkjnrkjcghmwkjnjwerkjgnqerhgiwehrghwrgkha fgkjfhgchuhfinugrgoehrwmicghqreicghqiurchmqgoinucgoqhri guqhxrieuxfoiqurcguqnruriugqruhqoiruhfiq ourhgioqrhgiuoqhrbsdjhfbkjahsdhfqyw4groiu whoy  ewbo  egwryoug  weuifh  weyfg wegfyewhfyewrgywehriuehwiru iw if qw fq qhyor gqyreg yqer ggo qerg qer aiuehnreghveqrighiqerh ngiqergqergqergvqeriughqerioghoiurhgiuerogiuqhneroiugvqve iorugvoiquergoiuqeroiguyqeroiugyqiuoerygiouqerygoiuqeyriougvyqe iroyvgiuqerycgiuqeyerciogyqergyoiuqcrioguyqeriogcyiouqreybgioqeriougycqierbgiuoqer oigcqeiourgnciouqergiouqyebriougybqei
+              <p>klhfglqh rguhwerljknwrehvlntkwerghnklwe hrnlghnvwelkrgnvlkjwehrgkj vhwnejkrngkwer kjgcnkjgrkjnrkjcghm wkjnjwerkjgnqe rhgiwehrghwrgkha fgkjfhgchuhfinugrgoe hrwmicghqreicghqiurchmqgoin ucgoqhri guqhxrieuxfoiqu rcguqnruriugqr uhqoiruhfiq ourhgioqrhgiuoqhrbs djhfbkjahsdhfqyw4groiu whoy  ewbo  egwryoug  weuifh  weyfg wegfyewhfyewr gywehriuehwiru iw if qw fq qhyor gqyreg yqer ggo qerg qer aiuehnreghveqrighiqerh ngiqergqergq ergvqeriughqeriogh oiurhgiuero giuqhneroiugvqve iorugvoiquergoiuq eroiguyqeroiug yqiuoerygiouqe rygoiuqeyriougvyqe iroyvgiuqerycgiuqeyerciogy qergyoiuqcrioguyqeriogcyi ouqreybgioqerio ugycqierbgiuoqer oigcqeiourgnciouqer giouqyebriougybqei
               orugybioeryiy</p>
-              <p>klhfglqhrguhwerljknwrehvlntkwerghnklwehrnlghnvwelkrgnvlkjwehrgkjvhwnejkrngkwer kjgcnkjgrkjnrkjcghmwkjnjwerkjgnqerhgiwehrghwrgkha fgkjfhgchuhfinugrgoehrwmicghqreicghqiurchmqgoinucgoqhri guqhxrieuxfoiqurcguqnruriugqruhqoiruhfiq ourhgioqrhgiuoqhrbsdjhfbkjahsdhfqyw4groiu whoy  ewbo  egwryoug  weuifh  weyfg wegfyewhfyewrgywehriuehwiru iw if qw fq qhyor gqyreg yqer ggo qerg qer aiuehnreghveqrighiqerh ngiqergqergqergvqeriughqerioghoiurhgiuerogiuqhneroiugvqve iorugvoiquergoiuqeroiguyqeroiugyqiuoerygiouqerygoiuqeyriougvyqe iroyvgiuqerycgiuqeyerciogyqergyoiuqcrioguyqeriogcyiouqreybgioqeriougycqierbgiuoqer oigcqeiourgnciouqergiouqyebriougybqei
+              <p>klhfglqhrguhwer ljknwrehvlntkwerg hnklwehrnlghnvwe lkrgnvlkjwehrgkjvhwn ejkrngkwer kjgcnkjgrkjnrk jcghmwkjnjwerk jgnqerhgiwehrghwrgkha fgkjfhgchuhfin ugrgoehrwmicghqreicghq iurchmqgoinucgoqhri guqhxrieuxfoiq urcguqnruriugqruhq oiruhfiq ourhgioqrhgiuoq hrbsdjhfbkjahsd hfqyw4groiu whoy  ewbo  egwryoug  weuifh  weyfg wegfyewhfyewr gywehriuehwiru iw if qw fq qhyor gqyreg yqer ggo qerg qer aiuehnreghveqrighiqerh ngiqergqergqergvq eriughqerioghoiu rhgiuerogiuqhneroiugvqve iorugvoiquergoiuqe roiguyqeroiugyqi uoerygiouqeryg oiuqeyriougvyqe iroyvgiuqerycgi uqeyerciogyqergyoiuq crioguyqeriogcyiouqr eybgioqeriougyc qierbgiuoqer oigcqeiourgnciouqergiouq yebriougybqei
               orugybioeryiy</p>
             </Wrapper>
 
@@ -128,17 +158,16 @@ class App extends Component {
             <Wrapper>
               <Heading>Projects</Heading>
               <br></br>
-              {this.state.projects.map(project => (
+              {this.state.data.map(project => (
                 <ProjectCard
                   id={project.id}
                   key={project.id}
                   name={project.name}
                   description={project.description}
-                  image={project.image}
                   url={project.url}
+                  image={project.image}
                 />
               ))}
-
             </Wrapper>
 
             <Line id="emailMe" />

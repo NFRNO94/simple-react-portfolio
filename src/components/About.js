@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Img from "../assets/images/editedBw.jpeg"
+import Img from "../assets/images/editedBw.jpeg";
+
 import styled from 'styled-components';
 
 const TitleImg = styled.img`

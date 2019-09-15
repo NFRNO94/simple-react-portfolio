@@ -5,10 +5,11 @@ const Card = styled.div`
 border: 1.5px solid #ccc;
 padding: 1px;
 margin-bottom: 15px;
-
+text-decoration: none;
 
 :hover {
-    color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
 }
 `;
 
@@ -17,7 +18,7 @@ function ProjectCard(props) {
         <div className="project">
             <a href={props.url}>
             <Card>
-                <img src={props.image} alt={props.name} />
+                <img src={props.image} alt={props.name} width="100%" height="400" />
                 <div className="desc">
                     <strong>{props.name}</strong>
                     <p>{props.description}</p>
