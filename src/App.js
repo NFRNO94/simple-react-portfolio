@@ -6,6 +6,8 @@ import Navbar from "../src/components/Navbar.js";
 import About from "../src/components/About.js";
 import SkillsList from "../src/components/SkillsList.js";
 import ProjectCard from "../src/components/ProjectCard.js";
+import Contact from "../src/components/Contact.js";
+import Statement from "../src/components/Statement.js";
 import Img from "../src/assets/images/landBack.png";
 import styled from 'styled-components';
 
@@ -20,16 +22,6 @@ const AppStyle = createGlobalStyle`
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
-`;
-
-const HeadDiv = styled.div`
-padding: 325px 50px 325px 50px;
-width: 100%;
-height: 100%;
-color: white;
-text-align: center;
-font-weight: bolder;
-text-shadow: 3px 3px black;
 `;
 
 const Heading = styled.h2`
@@ -52,20 +44,6 @@ color: white;
 background: white;
 margin: 50px;
 padding: 0px 20px 0px 20px;
-`;
-
-const EmailBtn = styled.button`
-background: #001eff;
-color: white;
-width: 100%;
-padding: 15px 20px 15px 20px;
-border-radius: 10px;
-
-:hover {
-  background: white;
-  color: #001eff;
-  border: solid 1px #001eff;
-}
 `;
 
 const ToTop = styled.a`
@@ -91,30 +69,37 @@ const data = [
   },
   {
     "id": 2,
-    "name": "The Hookah Lounge & Bar",
-    "description": "An app created to place table orders, make reservations, and manage inventory of a Hookah Lounge using Handlebars, JavaScript and SQL",
-    "image": require("../src/assets/images/mcuClickPic.png"),
-    "url": "..."
+    "name": "Friend Finder",
+    "description": "Take the survey to find your most compatible friend! Built with Bootsrap, and Express",
+    "image": require("../src/assets/images/friendFinder.png"),
+    "url": "https://salty-inlet-84276.herokuapp.com/"
   },
   {
     "id": 3,
-    "name": "Submerge",
-    "description": "Subscription manager meets Entertainment Hub! Full Stack React App with Mongoose.",
-    "image": require("../src/assets/images/mcuClickPic.png"),
-    "url": "..."
-  }
+    "name": "The Hookah Lounge & Bar (In progress)",
+    "description": "An app created to place table orders, make reservations, and manage inventory of a Hookah Lounge using Handlebars, JavaScript and SQL.",
+    "image": require("../src/assets/images/hookahLounge.png"),
+    "url": "https://group-project2.herokuapp.com/"
+  },
+  {
+    "id": 4,
+    "name": "Eat-Da-Burgers!!! (In progress)",
+    "description": "A Full Stack Application built with Handlebars and MYSQL. User's can devour a burger off the menu, and add devoured burgers back to the menu. The user also has the ability to add a new burger!",
+    "image": require("../src/assets/images/eatDaBurgers.png"),
+    "url": "https://warm-taiga-59396.herokuapp.com/"
+  },
+  // {
+  //   "id": 5,
+  //   "name": "Submerge",
+  //   "description": "Subscription manager meets Entertainment Hub! Full Stack React App with Mongoose.",
+  //   "image": require("../src/assets/images/mcuClickPic.png"),
+  //   "url": "..."
+  // }
 ]
 
 class App extends Component {
   state = {
     data
-  };
-
-  formatImageUrl(url) {
-    const width = '400'
-    const height = '400'
-
-    return url.replace('{width}', width).replace('{height}', height)
   };
 
   render() {
@@ -123,14 +108,13 @@ class App extends Component {
         <AppStyle />
         <Navbar />
         <Wrapper2>
+
           <br></br>
+
           <Wrapper2>
-            <div className="statement">
-              <HeadDiv>
-                <h1>Hello, my name is Dante! I am a Full Stack Web Developer living in Queen Creek, AZ.</h1>
-              </HeadDiv>
-            </div>
+            <Statement />
           </Wrapper2>
+
           <BodyDiv id="aboutMe">
             <br></br>
             <br></br>
@@ -138,12 +122,6 @@ class App extends Component {
             <Wrapper>
               <Heading>About Me</Heading>
               <About />
-              <br></br>
-              <br></br>
-              <p>klhfglqh rguhwerljknwrehvlntkwerghnklwe hrnlghnvwelkrgnvlkjwehrgkj vhwnejkrngkwer kjgcnkjgrkjnrkjcghm wkjnjwerkjgnqe rhgiwehrghwrgkha fgkjfhgchuhfinugrgoe hrwmicghqreicghqiurchmqgoin ucgoqhri guqhxrieuxfoiqu rcguqnruriugqr uhqoiruhfiq ourhgioqrhgiuoqhrbs djhfbkjahsdhfqyw4groiu whoy  ewbo  egwryoug  weuifh  weyfg wegfyewhfyewr gywehriuehwiru iw if qw fq qhyor gqyreg yqer ggo qerg qer aiuehnreghveqrighiqerh ngiqergqergq ergvqeriughqeriogh oiurhgiuero giuqhneroiugvqve iorugvoiquergoiuq eroiguyqeroiug yqiuoerygiouqe rygoiuqeyriougvyqe iroyvgiuqerycgiuqeyerciogy qergyoiuqcrioguyqeriogcyi ouqreybgioqerio ugycqierbgiuoqer oigcqeiourgnciouqer giouqyebriougybqei
-              orugybioeryiy</p>
-              <p>klhfglqhrguhwer ljknwrehvlntkwerg hnklwehrnlghnvwe lkrgnvlkjwehrgkjvhwn ejkrngkwer kjgcnkjgrkjnrk jcghmwkjnjwerk jgnqerhgiwehrghwrgkha fgkjfhgchuhfin ugrgoehrwmicghqreicghq iurchmqgoinucgoqhri guqhxrieuxfoiq urcguqnruriugqruhq oiruhfiq ourhgioqrhgiuoq hrbsdjhfbkjahsd hfqyw4groiu whoy  ewbo  egwryoug  weuifh  weyfg wegfyewhfyewr gywehriuehwiru iw if qw fq qhyor gqyreg yqer ggo qerg qer aiuehnreghveqrighiqerh ngiqergqergqergvq eriughqerioghoiu rhgiuerogiuqhneroiugvqve iorugvoiquergoiuqe roiguyqeroiugyqi uoerygiouqeryg oiuqeyriougvyqe iroyvgiuqerycgi uqeyerciogyqergyoiuq crioguyqeriogcyiouqr eybgioqeriougyc qierbgiuoqer oigcqeiourgnciouqergiouq yebriougybqei
-              orugybioeryiy</p>
             </Wrapper>
 
             <Line id="skills" />
@@ -173,20 +151,7 @@ class App extends Component {
             <Line id="emailMe" />
 
             <Wrapper>
-              <div className="text-center justify-content-center">
-                <Heading>Would you like to work with me?</Heading>
-                <EmailBtn type="button" className="btn btn-lg btn-block"><h3>Send me and email!</h3></EmailBtn>
-                <br></br>
-                <br></br>
-
-                <Heading id="followMe">Follow Me!</Heading>
-                <button>GitHub</button>
-                <button>Twitter</button>
-                <button>Heroku</button>
-                <button>Facebook</button>
-                <button>Instagram</button>
-                <button>LinkedIn</button>
-              </div>
+              <Contact />
             </Wrapper>
 
             <br></br>
