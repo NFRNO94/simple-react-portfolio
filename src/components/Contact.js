@@ -53,7 +53,7 @@ class Contact extends Component {
             <div className="text-center justify-content-center">
                 <Heading>Would you like to work with me?</Heading>
                 <ResumeLink href="https://docs.google.com/document/d/1qm79o_XTHDWlZDkP40xtsX9crIUMjQwcwdNUd4sKy20/edit?usp=sharing">
-                <EmailBtn type="button" className="btn btn-lg btn-block"><h3>View My Resume</h3></EmailBtn>
+                    <EmailBtn type="button" className="btn btn-lg btn-block"><h3>View My Resume</h3></EmailBtn>
                 </ResumeLink>
 
                 <br></br>

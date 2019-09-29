@@ -26,7 +26,6 @@ const AppStyle = createGlobalStyle`
 `;
 
 // const fadeInAnimation = keyframes`${fadeIn}`;
-
 // const rotateAnimation = keyframes`${rotateOut}`;
 
 const Heading = styled.h2`
