@@ -1,25 +1,8 @@
 import React, { Component } from "react";
-import styled from 'styled-components';
+import { rotateOut } from 'react-animations';
+import styled, { keyframes } from 'styled-components';
 
-// const rotate = keyframes`
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// `;
-
-// const Rotate = styled.div`
-//   display: inline-block;
-//   animation: ${rotate} 2s linear infinite;
-//   padding: 2rem 1rem;
-//   font-size: 1.2rem;
-// `;
-
-// const styles = css`
-//   animation: ${rotate} 2s linear infinite;
-// `
+const rotateAnimation = keyframes`${rotateOut}`;
 
 const ContainLogo = styled.div`
     color: white;
@@ -28,6 +11,10 @@ const ContainLogo = styled.div`
     border: solid 5px white;
     border-radius: 5px;
     display: inline-block;
+    
+    :hover {
+        animation: 2s ${rotateAnimation};
+    }
 `;
 
 const Letters = styled.h5`

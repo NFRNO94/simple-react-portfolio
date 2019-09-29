@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import Wrapper from "./Wrapper.js";
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components';
 
 const List = styled.ul`
 margin: 0px 25px 0px 25px;

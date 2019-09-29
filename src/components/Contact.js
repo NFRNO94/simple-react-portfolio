@@ -4,7 +4,7 @@ import ImgG from "../assets/images/iconfinder_github_circle_gray_107139.png";
 import ImgT from "../assets/images/iconfinder_twitter_circle_gray_107135.png";
 import ImgI from "../assets/images/iconfinder_instagram_circle_gray_107138.png";
 import ImgL from "../assets/images/iconfinder_linkedin_circle_gray_107149.png";
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const Heading = styled.h2`
 color: #001eff;
@@ -32,24 +32,30 @@ width: 60px;
 height: 60px;
 margin: 5px;
 border-bottom: solid black;
-border-width: 4px; 
-border-radius: 6px;
+border-width: 0px; 
+border-radius: 75px;
 
 :hover {
-    border-bottom: solid #001eff;
-    border-width: 4px; 
-    border-radius: 6px;
+    background-color: #001eff;
+    border-width: 0px; 
+    border-radius: 75px;
 }
 `;
 
+const ResumeLink = styled.a`
+:hover {
+    text-decoration: none;
+}
+`;
 class Contact extends Component {
     render() {
         return (
             <div className="text-center justify-content-center">
                 <Heading>Would you like to work with me?</Heading>
-                <EmailBtn type="button" className="btn btn-lg btn-block"><h3>Send me and email!</h3></EmailBtn>
+                <ResumeLink href="https://docs.google.com/document/d/1qm79o_XTHDWlZDkP40xtsX9crIUMjQwcwdNUd4sKy20/edit?usp=sharing">
+                <EmailBtn type="button" className="btn btn-lg btn-block"><h3>View My Resume</h3></EmailBtn>
+                </ResumeLink>
 
-                <br></br>
                 <br></br>
 
                 <Heading id="followMe">Follow Me!</Heading>

@@ -9,7 +9,8 @@ import ProjectCard from "../src/components/ProjectCard.js";
 import Contact from "../src/components/Contact.js";
 import Statement from "../src/components/Statement.js";
 import Img from "../src/assets/images/landBack.png";
-import styled from 'styled-components';
+// import { fadeIn, rotateOut } from 'react-animations';
+import styled, { keyframes } from 'styled-components';
 
 const AppStyle = createGlobalStyle`
   html, body {
@@ -23,6 +24,10 @@ const AppStyle = createGlobalStyle`
     background-repeat: no-repeat;
   }
 `;
+
+// const fadeInAnimation = keyframes`${fadeIn}`;
+
+// const rotateAnimation = keyframes`${rotateOut}`;
 
 const Heading = styled.h2`
 color: #001eff;
@@ -151,6 +156,7 @@ class App extends Component {
             <Line id="emailMe" />
 
             <Wrapper>
+              <Heading>Contact Me</Heading>
               <Contact />
             </Wrapper>
 
@@ -160,7 +166,7 @@ class App extends Component {
             <Wrapper>
               <div className="row text-center">
                 <div className="col">
-                  <ToTop href="#top">Back to top with arrow</ToTop>
+                  <ToTop href="#top">Back to top <i className="fa fa-long-arrow-up"></i></ToTop>
                 </div>
               </div>
             </Wrapper>

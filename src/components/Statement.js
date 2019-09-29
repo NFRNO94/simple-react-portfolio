@@ -1,5 +1,8 @@
 import React, { Component } from "react";
-import styled from 'styled-components';
+import { fadeInRight } from 'react-animations';
+import styled, { keyframes } from 'styled-components';
+
+const fadeInAnimation = keyframes`${fadeInRight}`;
 
 const HeadDiv = styled.div`
 padding: 325px 50px 325px 50px;
@@ -11,12 +14,16 @@ font-weight: bolder;
 text-shadow: 3px 3px black;
 `;
 
+const StatementHead = styled.h1`
+animation: 2s ${fadeInAnimation};
+`;
+
 class Statement extends Component {
     render() {
         return (
             <div className="statement">
                 <HeadDiv>
-                    <h1>Hello, my name is Dante! I am a Full Stack Web Developer living in Queen Creek, AZ.</h1>
+                    <StatementHead>Hello, my name is Dante! I am a Full Stack Web Developer living in Queen Creek, AZ.</StatementHead>
                 </HeadDiv>
             </div>
         )

@@ -1,22 +1,27 @@
 import React, { Component } from "react";
 import Logo from "./Logo.js";
-import styled from 'styled-components';
+import { fadeInDown } from 'react-animations';
+import styled, { keyframes } from 'styled-components';
+
+const fadeDownAni = keyframes`${fadeInDown}`;
 
 const NavBar = styled.nav`
 background: black;
 width: 100%;
 height: auto;
 padding: 15px 25px 15px 25px;
+animation: 2s ${fadeDownAni};
 `;
 
 const NavLink = styled.a`
 color: white;
-font-size: 16px;
+font-size: 18px;
 font-weight: bolder;
 border-bottom: solid black;
 border-width: 3px; 
 border-radius: 3px;
 margin-right: 5px;
+font-family: 'Mukta', sans-serif;
 
 :hover {
     color: #001eff;
