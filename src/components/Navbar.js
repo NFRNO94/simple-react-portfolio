@@ -45,22 +45,28 @@ transition: 1.5s;
 class Navbar extends Component {
     render() {
         return (
-            <NavBar className="navbar navbar-light sticky-top" id="top">
+            <NavBar className="navbar navbar-expand-lg navbar-light sticky-top" id="top">
                 <LogoLink href="#top"><Logo /></LogoLink>
-                <NavUl className="nav justify-content-end">
-                    <li className="nav-item">
-                        <NavLink className="nav-link" href="#aboutMe">About Me</NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink className="nav-link" href="#skills">Skills</NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink className="nav-link" href="#projects">Projects</NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink className="nav-link" href="#emailMe">Contact Me</NavLink>
-                    </li>
-                </NavUl>
+                <button className="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                
+                <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <NavUl className="nav">
+                        <li className="nav-item">
+                            <NavLink className="nav-link" href="#aboutMe">About Me</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" href="#skills">Skills</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" href="#projects">Projects</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" href="#emailMe">Contact Me</NavLink>
+                        </li>
+                    </NavUl>
+                </div>
             </NavBar>
         )
     }
