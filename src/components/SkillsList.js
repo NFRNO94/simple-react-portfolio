@@ -39,7 +39,7 @@ class SkillsList extends Component {
 
                     <div className="col">
                         <List>
-                            <ListItem>Handlebars</ListItem>
+                            <ListItem>React-animations</ListItem>
                             <ListItem>Heroku Deployment</ListItem>
                             <ListItem>MySQL</ListItem>
                             <ListItem>Firebase</ListItem>
@@ -59,6 +59,7 @@ class SkillsList extends Component {
                             <ListItem>JQuery</ListItem>
                             <ListItem>CSS/Bootstrap</ListItem>
                             <ListItem>HTML</ListItem>
+                            <ListItem>Handlebars</ListItem>
                         </List>
                     </div>
 
