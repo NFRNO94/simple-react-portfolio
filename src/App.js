@@ -11,6 +11,7 @@ import Statement from "../src/components/Statement.js";
 import Img from "../src/assets/images/landBack.png";
 // import { fadeIn, rotateOut } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
+import './App.css';
 
 const AppStyle = createGlobalStyle`
   html, body {
@@ -18,10 +19,6 @@ const AppStyle = createGlobalStyle`
     height: 100%;
     color: white;
     scroll-behavior: smooth;
-    background-image: url(${Img});
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
   }
 `;
 
