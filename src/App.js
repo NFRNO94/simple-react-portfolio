@@ -20,6 +20,7 @@ const AppStyle = createGlobalStyle`
     scroll-behavior: smooth;
     background-image: url(${Img});
     background-size: cover;
+    background-color: #001eff;
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
@@ -54,7 +55,7 @@ const ToTop = styled.a`
 background: black;
 color: #001eff;
 border: none;
-font-size: 16px;
+font-size: 18px;
 
 :hover {
   color: white;
