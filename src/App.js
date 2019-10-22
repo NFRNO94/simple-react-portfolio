@@ -23,6 +23,10 @@ const AppStyle = createGlobalStyle`
     background-color: #001eff;
     background-attachment: fixed;
     background-repeat: no-repeat;
+
+    @media(max-width: 576px) {
+      background-size: 100% 100%;
+    }
   }
 `;
 
@@ -42,6 +46,10 @@ margin: 0px 50px 50px 50px;
 background: black;
 border-radius: 20px;
 box-shadow: 8px 5px #0a0a0a;
+
+@media(max-width: 576px) {
+  margin: 0px 15px 0px 15px
+}
 `;
 
 const Line = styled.hr`

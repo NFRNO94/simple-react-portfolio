@@ -12,6 +12,14 @@ color: white;
 text-align: center;
 font-weight: bolder;
 text-shadow: 3px 3px black;
+
+@media(max-width: 576px) {
+    padding: 125px 50px 275px 50px;
+  }
+
+@media(max-width: 768px) {
+    padding: 100px 50px 275px 50px;
+}
 `;
 
 const StatementHead = styled.h1`

@@ -33,6 +33,29 @@ font-family: 'Mukta', sans-serif;
 
 const NavUl = styled.ul`
 color: #001eff;
+
+@media(max-width: 576px) {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    text-align: center;
+}
+
+@media(max-width: 768px) {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    text-align: center;
+}
+
 `;
 
 const LogoLink = styled.a`

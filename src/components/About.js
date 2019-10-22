@@ -7,6 +7,10 @@ width: 100%;
 height: 500px;
 overflow: hidden;
 border-radius: 5px;
+
+@media(max-width: 576px) {
+  height: 300px;
+}
 `;
 
 class About extends Component {
