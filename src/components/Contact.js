@@ -15,13 +15,13 @@ padding-top: 50px;
 
 const EmailBtn = styled.button`
 background: #001eff;
-color: white;
+color: #dedede;
 width: 100%;
 padding: 15px 20px 15px 20px;
 border-radius: 10px;
 
 :hover {
-  background: white;
+  background: #dedede;
   color: #001eff;
   border: solid 1px #001eff;
 }

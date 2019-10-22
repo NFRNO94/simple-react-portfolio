@@ -11,6 +11,10 @@ border-radius: 5px;
 @media(max-width: 576px) {
   height: 300px;
 }
+
+@media(max-width: 768px) {
+  height: 250px;
+}
 `;
 
 class About extends Component {

@@ -27,6 +27,10 @@ const AppStyle = createGlobalStyle`
     @media(max-width: 576px) {
       background-size: 100% 100%;
     }
+
+    @media(max-width: 768px) {
+      background-size: 100% 100%;
+    }
   }
 `;
 
@@ -38,6 +42,10 @@ color: #001eff;
 font-style: italic;
 margin-bottom: 25px;
 padding-top: 50px;
+
+@media(max-width: 576px) {
+  padding-top: 65px;
+}
 `;
 
 const BodyDiv = styled.div`
@@ -45,10 +53,15 @@ padding: 15px 25px 0px 25px;
 margin: 0px 50px 50px 50px;
 background: black;
 border-radius: 20px;
-box-shadow: 8px 5px #0a0a0a;
+box-shadow: 8px 4px rgb(0, 0, 0, 0.75);
+
+@media(max-width: 768px) {
+  margin: 0px 25px 0px 25px;
+}
 
 @media(max-width: 576px) {
-  margin: 0px 15px 0px 15px
+  margin: 0px 15px 0px 15px;
+  padding: 15px 25px 0px 25px;
 }
 `;
 
@@ -57,6 +70,10 @@ color: white;
 background: white;
 margin: 50px;
 padding: 0px 20px 0px 20px;
+
+@media(max-width: 576px) {
+  margin: 20px;
+}
 `;
 
 const ToTop = styled.a`

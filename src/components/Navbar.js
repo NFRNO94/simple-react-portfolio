@@ -23,6 +23,14 @@ border-radius: 3px;
 margin-right: 5px;
 font-family: 'Mukta', sans-serif;
 
+@media(max-width: 768px) {
+   font-size: 22px;
+  }
+
+@media(max-width: 576px) {
+    font-size: 22px;
+}
+
 :hover {
     color: #001eff;
     border-bottom: solid white;
