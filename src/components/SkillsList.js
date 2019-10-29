@@ -35,7 +35,7 @@ const ListItem = styled.li`
     }
 
     @media(max-width: 576px) {
-        margin: 5px 10px 5px 20px;
+        margin: 5px 10px 5px 10px;
         padding: 3px;
         font-size: 14px;
     }
