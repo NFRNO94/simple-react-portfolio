@@ -16,7 +16,7 @@ flex-wrap: wrap;
   }
 
 @media(max-width: 576px) {
-    height: 550px;
+    height: 525px;
     padding: 0px;
 }
 
