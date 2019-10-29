@@ -11,7 +11,6 @@ color: white;
 
 :hover {
     text-decoration: none;
-    border: 3.5px solid #ccc;
     border-radius: 5px;
     color: #001eff;
 }

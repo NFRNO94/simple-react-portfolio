@@ -17,8 +17,9 @@ flex-wrap: wrap;
 
 @media(max-width: 576px) {
     height: 550px;
-    padding: 10px;
+    padding: 0px;
 }
+
 `;
 
 const ListItem = styled.li`
