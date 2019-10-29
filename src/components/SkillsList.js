@@ -35,9 +35,9 @@ const ListItem = styled.li`
     }
 
     @media(max-width: 576px) {
-        margin: 5px 15px 5px 30px;
-        padding: 5px;
-        font-size: 16px;
+        margin: 5px 10px 5px 20px;
+        padding: 3px;
+        font-size: 14px;
     }
 
     :hover {
