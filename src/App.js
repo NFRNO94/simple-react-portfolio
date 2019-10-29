@@ -24,11 +24,15 @@ const AppStyle = createGlobalStyle`
     background-attachment: fixed;
     background-repeat: no-repeat;
 
+    @media(max-width: 768px) {
+      background-size: 100% 100%;
+    }
+
     @media(max-width: 576px) {
       background-size: 100% 100%;
     }
 
-    @media(max-width: 768px) {
+    @media(min-width: 576px) {
       background-size: 100% 100%;
     }
   }

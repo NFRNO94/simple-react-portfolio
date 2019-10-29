@@ -8,12 +8,12 @@ height: 500px;
 overflow: hidden;
 border-radius: 5px;
 
-@media(max-width: 576px) {
-  height: 300px;
-}
-
 @media(max-width: 768px) {
   height: 250px;
+}
+
+@media(max-width: 576px) {
+  height: 200px;
 }
 `;
 
