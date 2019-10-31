@@ -28,6 +28,8 @@ const ListItem = styled.li`
     padding: 10px;
     font-weight: bold;
     font-size: 16px;
+    display: block;
+    text-align: left;
 
     @media(max-width: 768px) {
         margin: 5px 15px 5px 15px;
@@ -55,28 +57,28 @@ class SkillsList extends Component {
                     <List>
                         <ListItem>React.js</ListItem>
                         <ListItem>Styled Components</ListItem>
-                        <ListItem>Sequelize</ListItem>
-                        <ListItem>MERN Stack</ListItem>
-                        <ListItem>Moment.js</ListItem>
-                        <ListItem>User Authentication</ListItem>
-                        <ListItem>Node.js</ListItem>
-                        <ListItem>Express</ListItem>
                         <ListItem>React-animations</ListItem>
-                        <ListItem>Heroku Deployment</ListItem>
-                        <ListItem>MySQL</ListItem>
-                        <ListItem>Firebase</ListItem>
-                        <ListItem>MongoDB</ListItem>
-                        <ListItem>Mongoose </ListItem>
-                        <ListItem>API’s</ListItem>
-                        <ListItem>Ajax</ListItem>
-                        <ListItem>GitHub Pages</ListItem>
-                        <ListItem>Responsive Design</ListItem>
-                        <ListItem>GitHub</ListItem>
-                        <ListItem>JavaScript</ListItem>
-                        <ListItem>JQuery</ListItem>
+                        <ListItem>Handlebars</ListItem>
+                        <ListItem>MERN Stack</ListItem>
                         <ListItem>CSS/Bootstrap</ListItem>
                         <ListItem>HTML</ListItem>
-                        <ListItem>Handlebars</ListItem>
+                        <ListItem>JavaScript</ListItem>
+                        <ListItem>JQuery</ListItem>
+                        <ListItem>API’s</ListItem>
+                        <ListItem>Ajax</ListItem>
+                        <ListItem>Moment.js</ListItem>
+                        <ListItem>Node.js</ListItem>
+                        <ListItem>Express</ListItem>
+                        <ListItem>MySQL</ListItem>
+                        <ListItem>Sequelize</ListItem>
+                        <ListItem>MongoDB</ListItem>
+                        <ListItem>Mongoose </ListItem>
+                        <ListItem>Firebase</ListItem>
+                        <ListItem>User Authentication</ListItem>
+                        <ListItem>Heroku Deployment</ListItem>
+                        <ListItem>GitHub Pages</ListItem>
+                        <ListItem>Responsive Design</ListItem>
+                        <ListItem>Git</ListItem>
                     </List>
                 </div>
             </div>

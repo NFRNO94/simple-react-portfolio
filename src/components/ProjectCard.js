@@ -28,7 +28,6 @@ height: 300px;
 `;
 
 const Desc = styled.div`
-padding: 15px;
 position: absolute;
 bottom: 0;
 height: 100%;
@@ -62,7 +61,7 @@ function ProjectCard(props) {
         <div className="project">
             <ProLink href={props.url}>
                 <Card>
-                    <Desc>
+                    <Desc className="d-flex align-items-center justify-content-center text-center">
                         <DescText>{props.description}</DescText>
                     </Desc>
                     <CardImg src={props.image} alt={props.name} />

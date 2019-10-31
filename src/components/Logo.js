@@ -18,10 +18,12 @@ const ContainLogo = styled.div`
 `;
 
 const Letters = styled.h5`
-padding: 12px;
+padding: 10px;
 margin: 0px;
 text-decoration: none;
 font-weight: bolder;
+font-size: 20px;
+font-family: 'Kanit', sans-serif;
 
 :hover {
     text-decoration: none;

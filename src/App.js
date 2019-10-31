@@ -24,6 +24,7 @@ const AppStyle = createGlobalStyle`
     background-color: #001eff;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
 
     @media(max-width: 768px) {
       background-size: 100% 100%;
@@ -42,7 +43,9 @@ const AppStyle = createGlobalStyle`
 const Heading = styled.h2`
 color: #001eff;
 font-style: italic;
+font-weight: bold;
 margin-bottom: 25px;
+font-family: 'Mukta', sans-serif;
 `;
 
 const PosSpan = styled.span`
@@ -149,7 +152,7 @@ class App extends Component {
           </Wrapper2>
 
           <BodyDiv>
-          <PosSpan id="aboutMe"></PosSpan>
+            <PosSpan id="aboutMe"></PosSpan>
             <br></br>
             <br></br>
 
