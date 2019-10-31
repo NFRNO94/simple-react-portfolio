@@ -25,6 +25,10 @@ height: 300px;
     opacity: 0.15;
     color: white;
 }
+
+@media(max-width: 576px) {
+    height: 250px;
+}
 `;
 
 const Desc = styled.div`
