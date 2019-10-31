@@ -10,7 +10,8 @@ import Contact from "../src/components/Contact.js";
 import Statement from "../src/components/Statement.js";
 import Img from "../src/assets/images/landBack.png";
 // import { fadeIn, rotateOut } from 'react-animations';
-import styled, { keyframes } from 'styled-components';
+// import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 const AppStyle = createGlobalStyle`
   html, body {

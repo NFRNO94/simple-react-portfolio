@@ -4,7 +4,8 @@ import ImgG from "../assets/images/iconfinder_github_circle_gray_107139.png";
 import ImgT from "../assets/images/iconfinder_twitter_circle_gray_107135.png";
 import ImgI from "../assets/images/iconfinder_instagram_circle_gray_107138.png";
 import ImgL from "../assets/images/iconfinder_linkedin_circle_gray_107149.png";
-import styled, { keyframes } from 'styled-components';
+// import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 const Heading = styled.h2`
 color: #001eff;

@@ -63,14 +63,12 @@ color: #001eff;
     list-style: none;
     text-align: center;
 }
-
 `;
 
-const LogoLink = styled.a`
+const LogoLink = styled.button`
 transition: 1.5s;
-:hover {
-    text-decoration: none;
-}
+background-color: black;
+border: none;
 `;
 
 class Navbar extends Component {
@@ -81,7 +79,7 @@ class Navbar extends Component {
                 <button className="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                
+
                 <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <NavUl className="nav">
                         <li className="nav-item">

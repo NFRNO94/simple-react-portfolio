@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Img from "../assets/images/editedBw.jpeg";
-import styled, { keyframes } from 'styled-components';
+// import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 const TitleImg = styled.img`
 width: 100%;

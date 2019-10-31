@@ -1,9 +1,8 @@
 import React from "react";
-import styled, { keyframes } from 'styled-components';
+// import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 const Card = styled.div`
-border: 3.5px solid black;
-border-radius: 5px;
 padding: 5px;
 margin-bottom: 25px;
 text-decoration: none;
@@ -12,10 +11,8 @@ position: relative;
 
 :hover {
     text-decoration: none;
-    border-radius: 5px;
     color: white;
 }
-
 `;
 
 const CardImg = styled.img`

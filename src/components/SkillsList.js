@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import Wrapper from "./Wrapper.js";
-import styled, { keyframes } from 'styled-components';
+// import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 const List = styled.ul`
 margin: 0px 25px 0px 25px;
@@ -59,7 +60,7 @@ class SkillsList extends Component {
                         <ListItem>Moment.js</ListItem>
                         <ListItem>User Authentication</ListItem>
                         <ListItem>Node.js</ListItem>
-                        <ListItem>Express</ListItem>                
+                        <ListItem>Express</ListItem>
                         <ListItem>React-animations</ListItem>
                         <ListItem>Heroku Deployment</ListItem>
                         <ListItem>MySQL</ListItem>
