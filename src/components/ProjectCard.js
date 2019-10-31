@@ -27,7 +27,7 @@ height: 300px;
 }
 
 @media(max-width: 576px) {
-    height: 250px;
+    height: 225px;
 }
 `;
 
