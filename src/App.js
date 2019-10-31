@@ -43,11 +43,11 @@ const Heading = styled.h2`
 color: #001eff;
 font-style: italic;
 margin-bottom: 25px;
-padding-top: 50px;
+`;
 
-@media(max-width: 576px) {
-  padding-top: 65px;
-}
+const PosSpan = styled.span`
+opacity: 0;
+padding: 40px;
 `;
 
 const BodyDiv = styled.div`
@@ -148,7 +148,8 @@ class App extends Component {
             <Statement />
           </Wrapper2>
 
-          <BodyDiv id="aboutMe">
+          <BodyDiv>
+          <PosSpan id="aboutMe"></PosSpan>
             <br></br>
             <br></br>
 
@@ -157,14 +158,20 @@ class App extends Component {
               <About />
             </Wrapper>
 
-            <Line id="skills" />
+            <Line />
+            <PosSpan id="skills"></PosSpan>
+            <br></br>
+            <br></br>
 
             <Wrapper>
               <Heading>Skills</Heading>
               <SkillsList />
             </Wrapper>
 
-            <Line id="projects" />
+            <Line />
+            <PosSpan id="projects"></PosSpan>
+            <br></br>
+            <br></br>
 
             <Wrapper>
               <Heading>Projects</Heading>
@@ -181,7 +188,10 @@ class App extends Component {
               ))}
             </Wrapper>
 
-            <Line id="emailMe" />
+            <Line />
+            <PosSpan id="emailMe"></PosSpan>
+            <br></br>
+            <br></br>
 
             <Wrapper>
               <Heading>Contact Me</Heading>

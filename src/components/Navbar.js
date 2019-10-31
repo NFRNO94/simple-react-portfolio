@@ -9,7 +9,7 @@ const NavBar = styled.nav`
 background: black;
 width: 100%;
 height: auto;
-padding: 15px 25px 15px 25px;
+padding: 10px 25px 10px 25px;
 animation: 2s ${fadeDownAni};
 `;
 
