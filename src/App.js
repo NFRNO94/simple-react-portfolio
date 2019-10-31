@@ -31,6 +31,8 @@ const AppStyle = createGlobalStyle`
 
     @media(max-width: 576px) {
       background-size: 100% 100%;
+      background-color: #001eff;
+      background-image: none;
     }
 `;
 
@@ -60,8 +62,9 @@ box-shadow: 8px 4px rgb(0, 0, 0, 0.75);
 }
 
 @media(max-width: 576px) {
-  margin: 0px 15px 0px 15px;
+  margin: 0px;
   padding: 15px 25px 0px 25px;
+  box-shadow: none;
 }
 `;
 
