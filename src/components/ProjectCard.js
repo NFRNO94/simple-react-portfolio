@@ -31,6 +31,12 @@ height: 300px;
 }
 `;
 
+const CardTitle = styled.h3`
+@media(max-width: 576px) {
+    font-size: 22px;
+}
+`;
+
 const Desc = styled.div`
 position: absolute;
 bottom: 0;
@@ -69,7 +75,7 @@ function ProjectCard(props) {
                         <DescText>{props.description}</DescText>
                     </Desc>
                     <CardImg src={props.image} alt={props.name} />
-                    <h3>{props.name}</h3>
+                    <CardTitle>{props.name}</CardTitle>
                 </Card>
             </ProLink>
         </div>

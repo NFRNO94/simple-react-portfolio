@@ -28,6 +28,11 @@ font-family: 'Kanit', sans-serif;
 :hover {
     text-decoration: none;
 }
+
+@media(max-width: 576px) {
+    font-size: 18px;
+    padding: 5px;
+}
 `;
 
 const LogoLink = styled.a`

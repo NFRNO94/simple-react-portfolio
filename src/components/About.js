@@ -14,7 +14,7 @@ border-radius: 5px;
 }
 
 @media(max-width: 576px) {
-  height: 175px;
+  height: 160px;
 }
 `;
 
