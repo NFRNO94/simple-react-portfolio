@@ -18,7 +18,7 @@ text-shadow: 3px 3px black;
 }
 
 @media(max-width: 576px) {
-    padding: 200px 50px 475px 50px;
+    padding: 140px 50px 475px 50px;
   }
 `;
 
