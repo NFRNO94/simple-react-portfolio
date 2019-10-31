@@ -31,11 +31,6 @@ const AppStyle = createGlobalStyle`
     @media(max-width: 576px) {
       background-size: 100% 100%;
     }
-
-    @media(min-width: 576px) {
-      background-size: 100% 100%;
-    }
-  }
 `;
 
 // const fadeInAnimation = keyframes`${fadeIn}`;
