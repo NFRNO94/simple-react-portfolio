@@ -48,14 +48,22 @@ const ResumeLink = styled.a`
     text-decoration: none;
 }
 `;
+
+const EmailText = styled.p`
+font-size: 22px;
+color: white;
+`;
 class Contact extends Component {
     render() {
         return (
             <div className="text-center justify-content-center">
                 <Heading>Would you like to work with me?</Heading>
+                {/* email needs to go here */}
+                <EmailText>Email me: dproto58@gmail.com</EmailText>
                 <ResumeLink href="https://docs.google.com/document/d/1qm79o_XTHDWlZDkP40xtsX9crIUMjQwcwdNUd4sKy20/edit?usp=sharing">
                     <EmailBtn type="button" className="btn btn-lg btn-block"><h3>View My Resume</h3></EmailBtn>
                 </ResumeLink>
+                
 
                 <br></br>
 
